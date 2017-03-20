@@ -1,0 +1,69 @@
+body{
+  background-image:url(https://i.imgsafe.org/d5dfac911c.jpg);
+  background-attachment:fixed;
+  background-position:0px 500px;
+  background-size:cover;
+}
+li {
+  list-style-type:none;
+  display:inline-block;
+  /* hay que usar display para colocar cuadros horizontalmente */
+  /* display: ________ */
+  
+ 
+  
+  
+}
+
+.cuadro {
+ 
+  border:8px ridge grey;
+  box-shadow: 5px 5px 10px #000;
+  width:250px;
+  height:390px;
+  margin:20px;
+}
+
+/* Cuando pasamos el ratón por el cuadro... */
+.cuadro:hover {
+  /* Lo ponemos en sepia completamente (1). Los valores permitidos van desde el
+     rango 0 (foto original) hasta 1 (foto sepia completamente), pasando por 0.5
+     (al 50% de cada uno). También se permiten poner valores en porcentajes (0%, 50%, 100%...)*/
+ 
+}
+.cuadro,.cuadro2, .cuadro3, .cuadro4{
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
+}
+
+.cuadro:hover,.cuadro2:hover,.cuadro3:hover,.cuadro4:hover{
+  -webkit-filter: sepia(0);
+          filter: sepia(0);
+  opacity:0.8;
+  -webkit-transition:all 3s linear;
+  transition:all 3s linear;
+    
+}
+
+.cuadro2{
+  border:8px ridge grey;
+  box-shadow: 5px 5px 10px #000;
+  width:250px;
+  height:390px;
+  margin:20px;
+}
+
+.cuadro3{
+  border:8px ridge grey;
+  box-shadow: 5px 5px 10px #000;
+  width:250px;
+  height:390px;
+  margin:20px;
+}
+.cuadro4{
+  border:8px ridge grey;
+  box-shadow: 5px 5px 10px #000;
+  width:250px;
+  height:390px;
+  margin:20px;
+}
